@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+         <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        
+<div class="game-container">
+    <div class="title"><h1>tic-tac-toe</h1></div>
+    <div class="controls">
+      <div class="info">
+        <span class="error" id="error-div"></span>
+        <span class="msg" id="msg-div"></span>
+      </div>
+      <div class="restart-controls" id="restart-controls"><button id="menu-button">Back to Menu</button> <button id="restart-button">Restart Game</button></div>
+    </div>
+    
+    <div class="game-options" id="game-options">
+      <div class="form-row-group">
+        <div class="form-group">
+          <h3>Players</h3>
+          <select id="players">
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <h3>First Turn</h3>
+          <select id="starting-player">
+            <option value="0">Player 1</option>
+            <option value="1">Player 2</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="form-group player-options">
+        <h3 id="player1-title">Player 1</h3>
+        <label for="player1-name">Name: </label><input type="text" class="player-name" id="player1-name" value="Player 1">
+          <br>
+        <label for="player1-symbol">Symbol: </label><input type="text" class="player-symbol" id="player1-symbol" value="x" maxlength=11>
+        <hr>
+        <h3 id="player2-title">Computer</h3>
+        <label for="player2-name">Name: </label><input type="text" class="player-name" id="player2-name" value="Computer">
+          <br>
+        <label for="player2-symbol">Symbol: </label><input type="text" class="player-symbol" id="player2-symbol" value="o" maxlength=11>
+      </div>
+      
+      <div class="form-group">
+        <button id="start">Start Game</button>
+      </div>
+    </div>
+  
+    <table class="game-board" id="game-board">
+      <tr>
+        <td class="game-cell"></td>
+        <td class="game-cell"></td>
+        <td class="game-cell"></td>
+      </tr>
+      <tr>
+        <td class="game-cell"></td>
+        <td class="game-cell"></td>
+        <td class="game-cell"></td>
+      </tr>
+      <tr>
+        <td class="game-cell"></td>
+        <td class="game-cell"></td>
+        <td class="game-cell"></td>
+      </tr>
+    </table>
+  </div>
+        <script src="./script.js"></script>
+    </body>
+</html>

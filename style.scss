@@ -1,0 +1,119 @@
+body, button, input, option, select {
+  font-family: "Indie Flower", cursive;
+  font-size: 20px;
+  color: #777;
+}
+body, .game-container {
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  text-align: center;
+  margin: 0 auto;
+}
+button {
+  margin: 0.5rem auto;
+  height: 1.8rem;
+  background: none;
+  border-radius: 3px;
+  border: thin solid #bbb;
+  cursor: pointer;
+  transition: 0.1s linear background-color;
+  &:hover {
+    background-color: #ddd;
+    transition: 0.1s linear background-color;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+input {
+  margin: 0.5rem auto;
+  border: none;
+  border-bottom: thin solid #777;
+}
+h1 {
+  margin: 0;
+}
+h3 {
+  margin: 0.4rem;
+}
+.game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+.info {
+  height: 1.4rem;
+}
+.error {
+  color: red;
+}
+.info {
+  margin-bottom: 0.5rem;
+}
+.msg {
+  display: none;
+  background-color: #bbb;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+}
+.restart-controls button {
+  display: none;
+}
+
+.game-options {
+  width: 320px;
+  height: 440px;
+  margin: 0 auto;
+}
+.player-options {
+  margin-top: 0.5em;
+  border-radius: 25px;
+  border: 2px solid #bbb;
+}
+.form-group > * {
+  flex: 1 1 100%;
+}
+.form-row-group {
+  display: flex;
+  justify-content: center;
+  & > * {
+    flex: 1;
+  }
+}
+.game-board {
+  @extend .game-options;
+  display: none;
+  height: 440px;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+.game-cell {
+  font-size: 300%;
+  width: 103px;
+  height: 103px;
+  max-width: 103px;
+  max-height: 103px;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: middle;
+  border: 2px solid #777;
+  transition: 0.1s linear background-color;
+  &:hover {
+    background-color: #eee;
+    transition: 0.1s linear background-color;
+  }
+  &:nth-child(1) {
+    border-left: none;
+  }
+  &:last-child {
+    border-right: none;
+  }
+}
+tr {
+  &:first-child td { border-top: none; }
+  &:last-child td { border-bottom: none; }
+}
