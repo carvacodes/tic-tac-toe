@@ -1,6 +1,6 @@
 body, button, input, option, select {
   font-family: "Indie Flower", cursive;
-  font-size: 20px;
+  font-size: 18px;
   color: #777;
 }
 
@@ -134,6 +134,12 @@ tr:first-child td {
 }
 tr:last-child td {
   border-bottom: none;
+}
+
+@media screen and (min-height: 520px) {
+  body, button, input, option, select {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
